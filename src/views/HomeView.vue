@@ -33,6 +33,5 @@
 
 <script setup>
 import { categories } from '../utils/constants';
-// Daftarkan event agar bisa mengirim aksi klik ke App.vue
 defineEmits(['change-category']);
 </script>

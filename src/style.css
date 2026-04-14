@@ -7,7 +7,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Efek zoom halus pada gambar */
 .img-zoom-container {
   overflow: hidden;
 }
@@ -20,7 +19,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }

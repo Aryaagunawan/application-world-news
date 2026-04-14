@@ -34,18 +34,15 @@ import { categories } from './utils/constants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// State
 const news = ref([]);
 const loading = ref(false);
 const currentCategoryKey = ref('beranda');
 
-// Computed Data
 const currentCategoryName = computed(() => categories[currentCategoryKey.value]?.name);
 const currentCategorySource = computed(() => categories[currentCategoryKey.value]?.source);
 const featuredArticle = computed(() => news.value.length > 0 ? news.value[0] : null);
 const gridArticles = computed(() => news.value.length > 1 ? news.value.slice(1) : []);
 
-// Logika Navigasi
 const changeCategory = (cat) => {
     if (currentCategoryKey.value === cat) return;
     currentCategoryKey.value = cat;
